@@ -1,3 +1,7 @@
+var Particle = require('particle-api-js');
+var particle = new Particle();
+var token;
+
 particle.login({ username: 'email@example.com', password: 'pass' }).then(
     function (data) {
         console.log('API call completed on promise resolve: ', data.body.access_token);
