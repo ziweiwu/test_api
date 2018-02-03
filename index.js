@@ -13,7 +13,7 @@ particle.login({ username: 'alex.toutongi@gmail.com', password: 'Camaro2010' }).
     }
 );
 
-particle.getVariable({ deviceId: '', name: 'temp', auth: token }).then(function(data) {
+particle.getVariable({ deviceId: '2f002a000251363131363432', name: 'temperature', auth: token }).then(function(data) {
   console.log('Device variable retrieved successfully:', data);
 }, function(err) {
   console.log('An error occurred while getting attrs:', err);
